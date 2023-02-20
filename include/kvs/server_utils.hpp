@@ -777,7 +777,7 @@ public:
     PriorityValue input_value;
     input_value.ParseFromString(serialized);
 
-    int fd = open(fname(key).c_str(), O_RDWR | O_CREAT);
+    int fd = open(fname(key).c_str(), O_RDWR | O_CREAT, 0644);
     if (fd == -1) {
       std::cerr << "Failed to open file" << std::endl;
       return 0;
