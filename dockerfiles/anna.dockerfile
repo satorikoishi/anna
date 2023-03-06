@@ -16,7 +16,7 @@ FROM hydroproject/base:latest
 
 MAINTAINER Vikram Sreekanti <vsreekanti@gmail..com> version: 0.1
 
-ARG repo_org=hydro-project
+ARG repo_org=satorikoishi
 ARG source_branch=master
 ARG build_branch=docker-build
 
