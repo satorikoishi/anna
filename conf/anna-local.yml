@@ -1,10 +1,10 @@
 monitoring:
   mgmt_ip: 127.0.0.1
-  ip: 127.0.0.1
+  ip: 10.10.1.2
 routing:
   monitoring: 
       - 127.0.0.1
-  ip: 127.0.0.1
+  ip: 10.10.1.2
 user:
   monitoring:
       - 127.0.0.1
@@ -16,9 +16,9 @@ server:
       - 127.0.0.1
   routing: 
       - 127.0.0.1
-  seed_ip: 127.0.0.1
-  public_ip: 127.0.0.1
-  private_ip: 127.0.0.1
+  seed_ip: 10.10.1.2
+  public_ip: 10.10.1.2
+  private_ip: 10.10.1.2
   mgmt_ip: "NULL"
 policy:
   elasticity: false
