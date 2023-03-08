@@ -38,7 +38,7 @@ mkdir -p conf
 # Check if the context that we are running in is EC2 or not. If it is, we
 # determine separate private and public IP addresses. Otherwise, we use the
 # same one for both.
-PRIVATE_IP=`ifconfig eth0 | grep 'inet' | grep -v inet6 | sed -e 's/^[ \t]*//' | cut -d' ' -f2`
+PRIVATE_IP=`ifconfig eno1 | grep 'inet' | grep -v inet6 | sed -e 's/^[ \t]*//' | cut -d' ' -f2`
 PUBLIC_IP=$PRIVATE_IP
 
 # Download latest version of the code from relevant repository & branch -- if
